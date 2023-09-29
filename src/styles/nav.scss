@@ -1,0 +1,92 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 10rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+    .mobile{
+        display: none;
+    }
+    .nav_links{
+        display: flex;
+        gap: 3.9rem;
+        p{
+            border-bottom: 2px solid transparent;
+            transition: all 300ms ease;
+            &:hover{
+                opacity: 0.9;
+                cursor: pointer;
+                border-bottom: 2px solid $primary-main;
+            }
+        }
+    }
+    .started{
+        color: $primary-main;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        transition: all 300ms ease;
+        &:hover{
+            opacity: 0.9;
+            cursor: pointer;
+        }
+    }
+}
+@media screen and (max-width:750px) {
+    .nav{
+        display: block;
+        padding: 0;
+        .mobile{
+            display: block;
+        }
+        .started{
+            display: none;
+        }
+        .mobile-nav{
+            padding: .8rem 2.4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .hamburger{
+                height: .7rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                span{
+                    display: block;
+                    width: 1.8rem;
+                    height: 1.4px;
+                    background-color: $primary-main;
+                    transition: all 200ms ease-in-out;
+                }
+                &.cancel{
+                    justify-content: center;
+                    span{
+                        transform: rotate(45deg);
+                        &:last-child{
+                            transform: rotate(-45deg);
+                            margin-top: -1.4px;
+                        }
+                    }
+                }
+            }
+        }
+        .nav_links{
+            display: block;
+            position: absolute;
+            width: max-content;
+            height: 100%;
+            background-color: white;
+            padding: 1.8rem 4rem;
+            left: -100%;
+            transition: all 500ms ease;
+            &.display{
+                left: 0;
+            }
+        }
+    }
+}

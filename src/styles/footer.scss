@@ -1,0 +1,33 @@
+.footer{
+    width: 100%;
+    padding: 9.8rem 13rem;
+    display: flex;
+    background-color: $primary-main;
+    color: white;
+    justify-content: space-between;
+    align-items: flex-start;
+    div{
+        p{
+            cursor: pointer;
+            &:hover{
+                color: rgba(255,255,255,0.8);
+            }
+            &:not(:first-child){
+                font-family: 'Work Sans';
+            }
+        }
+    }
+}
+@media screen and (max-width:1250px) {
+    .footer{
+        padding: 6rem;
+    }
+}
+@media screen and (max-width:750px) {
+    .footer{
+        padding: 4rem 2.4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}

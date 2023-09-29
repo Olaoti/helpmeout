@@ -1,0 +1,90 @@
+.works{
+    padding: 10.3rem 10rem 11.8rem;
+    &__section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 5.9rem;
+        gap: 8rem;
+        .work{
+            .number{
+                width: 6.8rem;
+                height: 6.8rem;
+                display: grid;
+                place-items: center;
+                margin: 0 auto;
+                background-color: $primary-main;
+                color: white;
+                border-radius: 50%;
+                text-align: center;
+                font-family: 'Inter';
+                font-size: 3.2rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            h4{
+                margin: 3.2rem 0 1.6rem;
+            }
+            .workimg{
+                margin-top: 2.9rem;
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            
+        }
+    }
+}
+@media screen and (max-width:1240px) {
+    .works{
+        padding: 8rem 4rem 7rem;
+    }
+}
+@media screen and (max-width:850px) {
+    .works{
+        padding: 8rem 4rem 7rem;
+        &__section{
+            margin-top: 3.2rem;
+            grid-template-columns: 1fr;
+            .work{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h4{
+                    margin: 2rem 0 1.4rem;
+                }
+                h5{
+                    width: 80%;
+                }
+                .workimg{
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:550px) {
+    .works{
+        padding: 6rem 2.4rem 6rem;
+        &__section{
+            margin-top: 2rem;
+            grid-template-columns: 1fr;
+            .work{
+                .number{
+                    width: 4rem;
+                    height: 4rem;
+                    font-size: 2.8rem;
+                }
+                h5{
+                    width: 100%;
+                }
+                .workimg{
+                    width: 95%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.header{
+    padding: 10.5rem 5.1rem 7.6rem 10rem;
+    width: 100%;
+    &__section{
+        display: flex;
+        align-items: center;
+        &__left{
+            width: 43.6%;
+            padding-right: 1.4rem;
+            h5{
+                padding: 2rem 0 4.8rem;
+            }
+            button{
+                padding: 2.2rem 2.4rem;
+                span{
+                    font-size: 1.8rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+                svg{
+                    margin-left: 1.2rem;
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+        &__right{
+            position: relative;
+            width: 56.4%;
+                .blue{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+                .grey{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            .images{
+                position: relative;
+                z-index: 2;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 100%;
+                height: 100%;
+                gap: 1rem;
+                padding: 4.8rem 3.2rem;
+                div{
+                    width: 100%;
+                    height: auto;
+                    img{
+                        object-fit: contain;
+                        aspect-ratio: 14.5/10;
+                        width: 100%;
+                        height:100%;
+                    }
+                    &.woman{
+                        grid-row: 1/3;
+                        grid-column: 2/3;
+                        aspect-ratio: 14/20;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    .header{
+        padding: 8rem 2.1rem 4rem 2.4rem;
+
+    }
+}
+@media screen and (max-width:820px) {
+    .header{
+        padding: 6rem 0rem 4rem 0rem;
+        &__section{
+            display: block;
+            max-width: 100vw;
+            &__left{
+                width: 100%;
+                padding: 0 2.4rem 3rem;
+            }
+            &__right{
+                width: 100%;
+                .blue, .grey{
+                    width: 50vw;
+                    aspect-ratio: 1/1;
+                    svg{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                .images{
+                    padding: 3rem 2.4rem;
+                }
+            }
+        }
+    }
+    
+}
