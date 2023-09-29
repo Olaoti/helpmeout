@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
 import Logo from './Logo'
-import logoimg from '../Assets/logo.png'
 
 function Nav() {
     const [show, setShow] = useState(false)
   return (
     <div className='nav'>
       <div className='mobile-nav'>
-        <Logo imgsrc={logoimg}/>
+        <Logo/>
         <div className={`hamburger ${show?('cancel'):('show')}`} onClick={()=>setShow(!show)}>
             <span></span>
             <span></span>
