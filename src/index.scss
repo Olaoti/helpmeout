@@ -119,6 +119,8 @@ button{
 .flex{
   display: flex;
   align-items: center;
+  height: 100%;
+  width: fit-content;
 }
 .center{
   text-align: center;
@@ -162,5 +164,7 @@ button{
 @import './styles/works.scss';
 @import './styles/footer.scss';
 @import './styles/contact.scss';
+@import './styles/video.scss';
+
 
 
