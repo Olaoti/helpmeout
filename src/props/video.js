@@ -58,11 +58,11 @@ function Video() {
        <div className='playingvid'  onClick={editAssistant} > 
         {assistant?(
           <img src={avatar} alt='avatar' className='avatar' ref={avatarRef}/>
-        ):(<ReactPlayer url={vid} autoplay={true} muted={true} width={width>700?(400):(270)} height={width>700(200):(120)} playing={true} controls={false}/>)}
+        ):(<ReactPlayer url={vid} autoplay={true} muted={true} width={width>700?(400):(270)} height={width>700?(200):(120)} playing={true} controls={false}/>)}
       </div>
     
       <div className={`${assistant?'smtext':'text'}`}>
-        {assistant?('Click on avatar to disable the assistant'):('Click on avatar to activate the assistant. Enjoy!')}
+        {assistant?('Click to disable'):('Click on avatar to activate the assistant. Enjoy!')}
       </div>
       <div className='explain'>{
         assistant===true?(
