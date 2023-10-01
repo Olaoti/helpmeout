@@ -30,9 +30,14 @@ const Texts = [
         func:'Explore the numerous features of HelpMeOut, we love to see you here'
     },
     {
-        id:4,
+        id:6,
         action:'works',
         func:'Know how we work, we are happy to see you here'
+    },
+    {
+        id:7,
+        action:'start',
+        func:'Clicking this takes you to the contact page, get signed in or logged in'
     }
   ]
 export default Texts

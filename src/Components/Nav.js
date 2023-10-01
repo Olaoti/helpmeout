@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Logo from './Logo'
+import { Link } from 'react-router-dom'
 
 
 function Nav() {
@@ -16,9 +17,15 @@ function Nav() {
       <div className={`nav_links fwork ${show?('display'):('')}`}>
         <p className='bold fwork' id='features'>Features</p>
         <p className='bold fwork' id='works'>How It Works</p>
-        <p className='bold fwork mobile'>Get Started</p>
+        <Link className='link' to={'/contact'}>
+        <p className='bold fwork mobile' id='start'>Get Started</p>
+
+        </Link>
       </div>
-      <div className='started fsora'>Get Started</div>
+      <Link className='link' to={'/contact'}>
+      <div className='started fsora' id='start'>Get Started</div>
+
+      </Link>
     </div>
   )
 }
