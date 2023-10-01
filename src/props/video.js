@@ -1,12 +1,12 @@
 import React,{useContext, useEffect, useState, useRef} from 'react'
 import ReactPlayer from 'react-player'
-import vid from '../Assets/vid.mp4'
 import { Context } from '../App'
 import Typewriter from './Typewriter'
 import { MouseContext,ActionContext  } from '../App'
 import Texts from './Texts'
 import gsap from 'gsap'
 import avatar from '../Assets/avatar.gif'
+import vid from '../Assets/vid.mp4'
 import fullavatar from '../Assets/fullavatar.gif'
 
 
@@ -30,10 +30,6 @@ function Video() {
   useEffect(()=>{
     if(assistant===false){
       gsap.to(videoRef.current, {bottom:height/10, left:0})
-      gsap.set(avatarRef.current,{attr:{src:fullavatar}})
-    }else{
-      gsap.set(avatarRef.current,{attr:{src:avatar}})
-
     }
   },[assistant])
   useEffect(()=>{
@@ -59,8 +55,10 @@ function Video() {
 
   return (
     <div className='video' ref={videoRef}>
-       <div className='playingvid'  onClick={editAssistant} >
-        <img src={fullavatar} alt='avatar' className={assistant?("avatar"):("fullavatar")} ref={avatarRef}/>
+       <div className='playingvid'  onClick={editAssistant} > 
+        {assistant?(
+          <img src={avatar} alt='avatar' className='avatar' ref={avatarRef}/>
+        ):(<ReactPlayer url={vid} autoplay={true} muted={true} width={400} height={200} playing={true} controls={false}/>)}
       </div>
     
       <div className={`${assistant?'smtext':'text'}`}>
