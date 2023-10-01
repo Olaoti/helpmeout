@@ -157,6 +157,10 @@ button{
     font-size: 1.2rem
   }
 }
+.link{
+  text-decoration: none;
+  background-color: inherit;
+}
 
 @import './styles/nav.scss';
 @import './styles/header.scss';
