@@ -58,7 +58,7 @@ function Video() {
        <div className='playingvid'  onClick={editAssistant} > 
         {assistant?(
           <img src={avatar} alt='avatar' className='avatar' ref={avatarRef}/>
-        ):(<ReactPlayer url={vid} autoplay={true} muted={true} width={400} height={200} playing={true} controls={false}/>)}
+        ):(<ReactPlayer url={vid} autoplay={true} muted={true} width={width>700?(400):(270)} height={width>700(200):(120)} playing={true} controls={false}/>)}
       </div>
     
       <div className={`${assistant?'smtext':'text'}`}>
