@@ -27,7 +27,7 @@ function Works() {
     ]
 
   return (
-    <div className='works'>
+    <div className='works' id='work-sect'>
       <h3 id='works'>How It Works</h3>
       <div className='works__section'>
         {workslist?.map(work=>{

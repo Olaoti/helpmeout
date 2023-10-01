@@ -1,10 +1,13 @@
-import React from 'react'
+import React,{useEffectgi} from 'react'
 import Logo from '../Components/Logo'
 import { ReactComponent as Google } from '../Assets/tools/google.svg'
 import { ReactComponent as Facebook } from '../Assets/tools/facebook.svg'
 
 
 function Contact() {
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
   return (
     <div className='contact'>
         <Logo/>

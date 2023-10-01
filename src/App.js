@@ -14,6 +14,10 @@ export const MouseContext = React.createContext()
 
 
 function App() {
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
   const [assistant, setAssistant] = useState(false)
   const [act, setAct] = useState('')
   const [mousepos, setMousePos] = useState({})

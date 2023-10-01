@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Logo from './Logo'
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
 
 function Nav() {
@@ -15,8 +16,10 @@ function Nav() {
         </div>
       </div>
       <div className={`nav_links fwork ${show?('display'):('')}`}>
-        <p className='bold fwork' id='features'>Features</p>
-        <p className='bold fwork' id='works'>How It Works</p>
+      
+        <a href="./#feature-sect" className='link'>  <p className='bold fwork' id='features'>Features</p></a>
+        <a href="./#work-sect" className='link'> 
+        <p className='bold fwork' id='works'>How It Works</p></a>
         <Link className='link' to={'/contact'}>
         <p className='bold fwork mobile' id='start'>Get Started</p>
 

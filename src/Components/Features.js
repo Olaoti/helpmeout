@@ -30,7 +30,7 @@ function Features() {
         },
     ]
   return (
-    <div className='features'>
+    <div className='features' id='feature-sect'>
         <div className='heading center' >
             <h3 id='features'>Features</h3>
             <h5 id='features'>Key Highlights of Our Extension</h5>
