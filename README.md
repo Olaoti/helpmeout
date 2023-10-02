@@ -36,7 +36,7 @@ A clickable link to where the application is running would be shown eg localhost
 
 Client: react.js, sass
 
-Auth provider: clerk
+Auth provider: not yet added
 
 ## Future improvement
 Allows users to cancel the avatar video if not interested
