@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# HelpMeOut assistant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created with react and scss
 
-## Available Scripts
+## Features
+-Responsive user interface with cross browser functionality.
+-Fast movement of avatar
+-Allowing user to be able to activate or deactivate avatar
 
-In the project directory, you can run:
+## Environmental variables
+To be able to run this project, your .env file must contain the publishable key which must be accessable by adding it directly to the project folder
 
-### `npm start`
+## Run Locally
+Clone the project
+cmd
+https://github.com/Olaoti/helpmeout.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Go to the project directory
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+cmd
+cd helpmeout
 
-### `npm test`
+Install dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+cmd
+npm install
 
-### `npm run build`
+Run the project on server
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+cmd
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A clickable link to where the application is running would be shown eg localhost:3000/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech stack
 
-### `npm run eject`
+Client: react.js, sass
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Auth provider: clerk
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Future improvement
+Allows users to cancel the avatar video if not interested
+Improve usage on phone
+Set button ondouble Clicks so that the first click would be for the avatar to explain
+Improve the design on the avatar
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Demo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://helpoutt.vercel.app
